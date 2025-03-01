@@ -1,0 +1,81 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu10>
+Subject: Job 61997: <mlp_width_32> in cluster <Hazel> Exited
+
+Job <mlp_width_32> was submitted from host <login02> by user <kpatel48> in cluster <Hazel> at Tue Feb 25 17:29:02 2025
+Job was executed on host(s) <gpu10>, in queue <gpu>, as user <kpatel48> in cluster <Hazel> at Tue Feb 25 17:29:04 2025
+</home/kpatel48> was used as the home directory.
+</share/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/scripts> was used as the working directory.
+Started at Tue Feb 25 17:29:04 2025
+Terminated at Tue Feb 25 17:29:37 2025
+Results reported at Tue Feb 25 17:29:37 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+
+#!/bin/bash
+
+#BSUB -n 1
+
+#BSUB -W 24:00
+
+#BSUB -q gpu
+
+#BSUB -gpu "num=1:mode=shared:mps=no"
+
+#BSUB -J mlp_width_32  # Assign job name
+
+#BSUB -o /share/csc591s25/kpatel48/logs/mlp_width_32.out.%J
+
+#BSUB -e /share/csc591s25/kpatel48/logs/mlp_width_32.err.%J
+
+
+
+# Load environment
+
+source ~/.bashrc
+
+conda activate /share/csc591s25/conda_env/new_env
+
+
+
+# Change to the directory containing the MLP model code
+
+cd "/share/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP"
+
+
+
+# Run training
+
+python3 -m cache_replacement.policy_learning.cache_model.main --experiment_base_dir=/share/csc591s25/kpatel48/tmp --experiment_name=mlp_width_32 --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" --model_configs="cache_replacement/policy_learning/cache_model/configs/default.json" --model_bindings="lstm_hidden_size=32" --train_memtrace="cache_replacement/policy_learning/cache/traces/astar_313B_train.csv" --valid_memtrace="cache_replacement/policy_learning/cache/traces/astar_313B_valid.csv" --total_steps=20001
+
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   5.00 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   60 sec.
+    Turnaround time :                            35 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/kpatel48/logs/mlp_width_32.err.61997> for stderr output of this job.
+

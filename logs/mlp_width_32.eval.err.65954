@@ -1,0 +1,61 @@
+2025-02-26 11:48:05.781004: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-26 11:48:06.337066: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1740588486.723949 2777958 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1740588486.818285 2777958 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-26 11:48:07.281674: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0226 11:48:54.883856 23404543980544 utils.py:24] Experiment directory: /share/csc591s25/kpatel48/tmp_eval/mlp_width_32
+I0226 11:48:54.963370 23404543980544 main.py:107] Config: {
+    "associativity": 16,
+    "cache_line_size": 64,
+    "capacity": 2097152,
+    "eviction_policy": {
+        "policy_type": "greedy",
+        "scorer": {
+            "checkpoint": "/share/csc591s25/kpatel48/tmp/mlp_width_32/checkpoints/20000.ckpt",
+            "config_path": "/share/csc591s25/kpatel48/tmp/mlp_width_32/model_config.json",
+            "type": "learned"
+        }
+    }
+}
+I0226 11:48:54.963714 23404543980544 main.py:108] Flags: {
+    "memtrace_file": "cache_replacement/policy_learning/cache/traces/astar_313B_test.csv",
+    "tb_freq": 10000,
+    "warmup_period": 0
+}
+Initializing MemoryTrace:   0%|          | 0/10000000 [00:00<?, ?it/s]Initializing MemoryTrace:   0%|          | 41576/10000000 [00:00<00:23, 415734.63it/s]Initializing MemoryTrace:   1%|          | 100522/10000000 [00:00<00:19, 517907.77it/s]Initializing MemoryTrace:   2%|▏         | 248919/10000000 [00:00<00:10, 959005.63it/s]Initializing MemoryTrace:   6%|▌         | 575935/10000000 [00:00<00:05, 1871387.63it/s]Initializing MemoryTrace:   9%|▉         | 928993/10000000 [00:00<00:03, 2469680.04it/s]Initializing MemoryTrace:  13%|█▎        | 1299010/10000000 [00:00<00:03, 2888029.67it/s]Initializing MemoryTrace:  17%|█▋        | 1680726/10000000 [00:00<00:02, 3191763.61it/s]Initializing MemoryTrace:  21%|██        | 2071427/10000000 [00:00<00:02, 3419423.14it/s]Initializing MemoryTrace:  25%|██▍       | 2467711/10000000 [00:00<00:02, 3589288.37it/s]Initializing MemoryTrace:  29%|██▊       | 2868810/10000000 [00:01<00:01, 3719374.35it/s]Initializing MemoryTrace:  33%|███▎      | 3273596/10000000 [00:01<00:01, 3819892.26it/s]Initializing MemoryTrace:  37%|███▋      | 3681535/10000000 [00:01<00:01, 3898816.67it/s]Initializing MemoryTrace:  41%|████      | 4084339/10000000 [00:01<00:01, 3937869.52it/s]Initializing MemoryTrace:  45%|████▍     | 4495000/10000000 [00:01<00:01, 3988819.77it/s]Initializing MemoryTrace:  49%|████▉     | 4907814/10000000 [00:01<00:01, 4030798.02it/s]Initializing MemoryTrace:  53%|█████▎    | 5322079/10000000 [00:01<00:01, 4064448.53it/s]Initializing MemoryTrace:  57%|█████▋    | 5737458/10000000 [00:01<00:01, 4091302.47it/s]Initializing MemoryTrace:  62%|██████▏   | 6153294/10000000 [00:01<00:00, 4111441.68it/s]Initializing MemoryTrace:  66%|██████▌   | 6569643/10000000 [00:01<00:00, 4127060.23it/s]Initializing MemoryTrace:  70%|██████▉   | 6986388/10000000 [00:02<00:00, 4139173.09it/s]Initializing MemoryTrace:  74%|███████▍  | 7400306/10000000 [00:02<00:00, 4108033.87it/s]Initializing MemoryTrace:  78%|███████▊  | 7816436/10000000 [00:02<00:00, 4123919.05it/s]Initializing MemoryTrace:  82%|████████▏ | 8233684/10000000 [00:02<00:00, 4138423.74it/s]Initializing MemoryTrace:  87%|████████▋ | 8650783/10000000 [00:02<00:00, 4148156.47it/s]Initializing MemoryTrace:  91%|█████████ | 9068138/10000000 [00:02<00:00, 4155745.04it/s]Initializing MemoryTrace:  95%|█████████▍| 9485949/10000000 [00:02<00:00, 4162429.92it/s]Initializing MemoryTrace:  99%|█████████▉| 9903547/10000000 [00:02<00:00, 4166480.83it/s]Initializing MemoryTrace: 100%|██████████| 10000000/10000000 [00:02<00:00, 3668702.56it/s]
+/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/__init__.py:1144: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:432.)
+  _C._set_default_tensor_type(t)
+Fatal Python error: Segmentation fault
+
+Thread 0x0000154830d0c640 (most recent call first):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/threading.py", line 316 in wait
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/threading.py", line 581 in wait
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tqdm/_monitor.py", line 60 in run
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x0000154830f0d640 (most recent call first):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/threading.py", line 312 in wait
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/summary/writer/event_file_writer.py", line 261 in get
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/summary/writer/event_file_writer.py", line 204 in run
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/threading.py", line 937 in _bootstrap
+
+Current thread 0x000015494b87b400 (most recent call first):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/cuda/__init__.py", line 319 in _lazy_init
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache_model/embed.py", line 137 in __init__
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache_model/embed.py", line 36 in from_config
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache_model/model.py", line 38 in from_config
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache_model/eviction_policy.py", line 58 in from_model_checkpoint
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 172 in scorer_from_config
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 180 in eviction_policy_from_config
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache/cache.py", line 194 in from_config
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache/main.py", line 119 in main
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 254 in _run_main
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 308 in run
+  File "/gpfs_common/share01/csc591s25/kpatel48/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache/main.py", line 158 in <module>
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87 in _run_code
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197 in _run_module_as_main
+/home/kpatel48/.lsbatch/1740588477.65954.shell: line 36: 2777958 Segmentation fault      (core dumped) python3 -m cache_replacement.policy_learning.cache.main --experiment_base_dir="/share/csc591s25/kpatel48/tmp_eval" --experiment_name="mlp_width_32" --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" --cache_configs="cache_replacement/policy_learning/cache/configs/eviction_policy/learned.json" --memtrace_file="cache_replacement/policy_learning/cache/traces/astar_313B_test.csv" --config_bindings="eviction_policy.scorer.checkpoint=\"/share/csc591s25/kpatel48/tmp/mlp_width_32/checkpoints/20000.ckpt\"" --config_bindings="eviction_policy.scorer.config_path=\"/share/csc591s25/kpatel48/tmp/mlp_width_32/model_config.json\"" --warmup_period=0
