@@ -4,7 +4,7 @@
 **Date:** February 28, 2025  
 
 ## Overview
-This repository contains the code, experiments, and analysis for **Homework 01** in CSC 591: Foundations of Generative AI for Systems. The assignment focuses on evaluating different cache replacement policies using AI-driven methods, including comparisons between LRU, Belady’s optimal policy, and learned models such as MLP, RNN, and LSTM.
+This repository contains the scripts, logs, and analysis for **Homework 01** in CSC 591: Foundations of Generative AI for Systems. The assignment focuses on evaluating different cache replacement policies using AI-driven methods, including comparisons between LRU, Belady’s optimal policy, and learned models such as MLP, RNN, and LSTM.
 
 ## Contents
 - **`report/`**: Compiled PDF of the report.
