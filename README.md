@@ -3,14 +3,8 @@
 **Author:** Kahaan Patel (kpatel48)  
 **Date:** February 28, 2025  
 
-## Overview
-This repository contains the scripts, logs, and analysis for **Homework 01** in CSC 591: Foundations of Generative AI for Systems. The assignment focuses on evaluating different cache replacement policies using AI-driven methods, including comparisons between LRU, Belady’s optimal policy, and learned models such as MLP, RNN, and LSTM.
+## Repository Access  
+Please visit the following link for full access to the repository:  
+🔗 **[GenAI_HW01 Repository](https://github.ncsu.edu/kpatel48/GenAI_HW01)**  
 
-## Contents
-- **`report/`**: Compiled PDF of the report.
-- **`images/`**: Figures and screenshots from the experiments.
-- **`src/`**: Implementation of the cache replacement policies.
-- **`scripts/`**: Scripts used for training, evaluations and plotting.
-- **`logs/`**: Log files generated after training each instance.
-- **`tensorboard/`**: Tensorboard logs after running each evaluation scripts.
-- **`README.md`**: This file.
+Note: There was an issue adding collaborators to this repository, so all relevant materials, including scripts, logs, and reports, can be found at the link above.
