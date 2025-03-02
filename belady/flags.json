@@ -1,5 +1,0 @@
-{
-    "memtrace_file": "cache_replacement/policy_learning/cache/traces/astar_313B_test.csv",
-    "tb_freq": 10000,
-    "warmup_period": 2000
-}
