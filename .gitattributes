@@ -1,2 +1,0 @@
-belady/evictions.txt filter=lfs diff=lfs merge=lfs -text
-lru/evictions.txt filter=lfs diff=lfs merge=lfs -text
